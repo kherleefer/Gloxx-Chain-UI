@@ -1,0 +1,14 @@
+.tab-transition-enter-active,
+.tab-transition-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.tab-transition-enter-from,
+.tab-transition-leave-to {
+  opacity: 0;
+}
+
+.tab-transition-enter-to,
+.tab-transition-leave-from {
+  opacity: 1;
+}

@@ -1,0 +1,328 @@
+/* For information on how to create your own theme, please see:
+http://ionicframework.com/docs/theming/ */
+
+:root {
+  --ion-color-primary: #800080;
+  --ion-color-primary-rgb: 128, 0, 128;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #4B0082;
+  --ion-color-primary-tint: #9400D3;
+
+  --gradient-primary: linear-gradient(135deg, #800080 0%, #4B0082 100%);
+  --gradient-primary-hover: linear-gradient(135deg, #9400D3 0%, #4B0082 100%);
+  
+  --ion-background-color: #f8f6fb;
+  --ion-background-color-rgb: 248,246,251;
+  --ion-text-color: #1a1a1a;
+  --ion-text-color-rgb: 26,26,26;
+
+  /* Card and item colors */
+  --ion-card-background: #ffffff;
+  --ion-item-background: #ffffff;
+  
+  /* Add subtle borders for better separation */
+  --ion-border-color: rgba(128, 0, 128, 0.1);
+  
+  /* Secondary text color */
+  --ion-color-medium: #666666;
+
+  /* Add custom properties for consistent styling */
+  --ion-tab-bar-background: var(--gradient-primary);
+  --ion-tab-bar-color: rgba(255, 255, 255, 0.7);
+  --ion-tab-bar-color-selected: #ffffff;
+}
+
+/* Dark theme */
+.dark {
+  /* Primary color variations */
+  --ion-color-primary: #9400D3;
+  --ion-color-primary-rgb: 148,0,211;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #800080;
+  --ion-color-primary-tint: #A020F0;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #9400D3 0%, #800080 100%);
+  --gradient-primary-hover: linear-gradient(135deg, #A020F0 0%, #9400D3 100%);
+
+  /* Background and text colors */
+  --ion-background-color: #121212;
+  --ion-background-color-rgb: 18,18,18;
+  --ion-text-color: #ffffff;
+  --ion-text-color-rgb: 255,255,255;
+
+  /* Card and item colors */
+  --ion-card-background: #1e1e1e;
+  --ion-item-background: #1e1e1e;
+  
+  /* Borders */
+  --ion-border-color: rgba(148, 0, 211, 0.2);
+  
+  /* Secondary text color */
+  --ion-color-medium: #9e9e9e;
+
+  /* Custom properties */
+  --ion-tab-bar-background: var(--gradient-primary);
+  --ion-tab-bar-color: rgba(255, 255, 255, 0.7);
+  --ion-tab-bar-color-selected: #ffffff;
+  
+  /* Additional dark mode specific */
+  --ion-toolbar-background: #1f1f1f;
+  --ion-tab-bar-background: #1f1f1f;
+}
+/* Add global styles */
+ion-button.gradient-btn {
+  --background: var(--gradient-primary);
+  --background-hover: var(--gradient-primary-hover);
+  --ripple-color: rgba(255, 255, 255, 0.2);
+}
+
+ion-segment-button {
+  --background: var(--gradient-primary);
+  --color: var(--ion-background-color);
+  color: var(--ion-text-color);
+}
+ion-alert{
+  --background: var(--ion-background-color) !important;
+  --color: var(--ion-background-color) !important;
+  color: var(--ion-text-color) !important;
+}
+  .text-default{
+    color: var(--ion-text-color) !important;
+  }
+.text-inherit{
+color: white;
+}
+ion-badge {
+  --background: var(--gradient-primary);
+}
+
+ion-tab-bar ion-icon {
+  color: var(--ion-tab-bar-color);
+}
+
+ion-tab-bar ion-icon.selected {
+  color: var(--ion-tab-bar-color-selected);
+}
+
+ion-card {
+  box-shadow: 0 4px 12px rgba(128, 0, 128, 0.08) !important;
+  border: 1px solid var(--ion-border-color);
+}
+
+ion-item {
+  --border-color: var(--ion-border-color);
+}
+
+ion-content {
+  --background: var(--ion-background-color);
+}
+ion-select {
+  background: var(--ion-background-color);
+  color: var(--ion-text-color);
+}
+ion-fab-list ion-fab-button{
+  background: var(--ion-background-color)!important;
+  color: var(--ion-text-color) !important; 
+}
+ 
+ ion-back-button{
+  color:var(--ion-text-color);
+ }
+ ion-segment-button{
+color: var(--ion-text-color);
+ }
+.card-header{
+  background: var(--ion-card-background);
+}
+.card-header ion-card-title{
+color: var(--ion-text-color);
+}
+.text-inherit{
+color: var(--ion-text-color);
+}
+.text-light {
+  display: flex !important;
+  align-items: center !important;
+  color: white !important;
+  padding: 0 16px !important;
+}
+.text-bold{
+  font-weight: 700;
+}
+
+.loader-outer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  
+}
+
+.loader-img-outer {
+  position: absolute;
+  top: 40;
+  left: 50;
+  width: 20%;
+  height: 12%;
+  animation: heartbeat 1.5s  infinite ease-in-out;
+  
+}
+.blur-backround{
+  filter: blur(5px);
+  pointer-events: none; 
+}
+.content-img-outer {
+  position: absolute;
+  top: 40;
+  left: 50;
+  width: 10%;
+  height: 7%;
+  animation: heartbeat 1.5s  infinite ease-in-out;
+  
+}
+.content-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  
+}
+@keyframes heartbeat {
+ 0% {transform: scale(1);}
+ 50% {transform: scale(1.1);}
+ 100% {transform: scale(1);}
+}
+
+.text-pri{
+  color: var(--ion-color-primary) !important; 
+}
+
+.b-all{
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+}
+.bt-right{
+  border-top-right-radius: 15px !important;
+}
+.bt-left{
+  border-top-left-radius: 15px !important;
+  
+}
+.bb-right{ 
+  
+  border-bottom-right-radius: 15px !important;
+}
+.bb-left{ 
+  
+  border-bottom-left-radius: 15px !important;
+}
+.b-top{
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+  
+}
+.b-bottom{
+ 
+  border-bottom-right-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+}
+
+.b-right{
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}
+
+.b-left{
+  border-top-left-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+}
+
+.text-bold{
+  font-weight: bolder !important;
+}
+.cfont{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.text-muted{
+  color: #6c757d;
+  opacity: 0.6;
+}
+
+.space-between{
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+
+}
+.text-center{
+  text-align: center !important;
+}
+.text-right{
+  text-align: right !important;
+}
+.text-left{
+  text-align: left !important;
+}
+.text-justify{
+  text-align: justify !important;
+}
+.text-start{
+  text-align: start !important;
+}
+.text-end{
+  text-align: end !important;
+}
+.text-uppercase{
+  text-transform: uppercase !important;
+}
+.text-lowercase{
+  text-transform: lowercase !important;
+}
+.text-capitalize{
+  text-transform: capitalize !important;
+}
+.text-truncate{
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+.text-nowrap{
+  white-space: nowrap !important;
+}
+.text-wrap{
+  white-space: normal !important;
+}
+.text-decoration-none{
+  text-decoration: none !important;
+}
+.text-decoration-underline{
+  text-decoration: underline !important;
+}
+.text-decoration-line-through{
+  text-decoration: line-through !important;
+}
+.text-decoration-underline{
+  text-decoration: underline !important;
+}
+.text-decoration-overline{
+  text-decoration: overline !important;
+}
+.text-decoration-none{
+  text-decoration: none !important;
+}
