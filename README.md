@@ -1,6 +1,6 @@
-# ⛏️ G-Chain Mining App
+# ⛏️ Gloxx-Chain App
 
-The **G-Chain Mining Application** is the official frontend interface for interacting with mining operations on the **G-Chain blockchain** — a next-generation, high-performance, quantum-resistant blockchain built for scalability, privacy, and interoperability.
+The **Gloxx Chain Application** is the official frontend interface for interacting with mining operations on the **G-Chain blockchain** — a next-generation, high-performance, quantum-resistant blockchain built for scalability, privacy, and interoperability.
 
 This app allows users to:
 - Start/stop mining operations
@@ -22,8 +22,6 @@ This app allows users to:
 ---
 
 ## 📸 UI Preview
-
-You can upload screenshots of each page below. These help developers understand the structure and flow of the mining app UI.
 
 ### 🧾 Dashboard (Mining Status)
 
@@ -49,9 +47,9 @@ The app interacts with G-Chain through a custom API wrapper. Here's how the inte
 
 ### 🔗 API Architecture
 
-- **REST Endpoints** for mining stats and wallet actions
+- **REST Endpoints** for mining stats, user Actions and wallet actions
 - **WebSockets** for real-time updates on block status and peer activity
-- **Cryptographic Signing** using post-quantum secure algorithms (CRYSTALS-Dilithium or Falcon)
+- **Cryptographic Signing** using post-quantum secure algorithms (CRYSTALS-Dilithium or Falcon) **On Progress**
 - **Local Storage** for key management (until a hardware wallet integration is added)
 
 ### 🧠 Example API Calls
@@ -65,3 +63,4 @@ await fetch(`${API_URL}/miner/start`, {
   method: 'POST',
   body: JSON.stringify({ wallet: userAddress, power: 'high' }),
 });
+
