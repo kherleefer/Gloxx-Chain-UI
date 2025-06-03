@@ -1,5 +1,6 @@
-# ⛏️ Gloxx-Chain App !(samples/Gloxx-logo-lg.png)
 
+> ![logo](samples/Gloxx-logo-lg.png)
+# ⛏️ Gloxx-Chain App 
 The **Gloxx Chain Application** is the official frontend interface for interacting with mining operations on the **G-Chain blockchain** — a next-generation, high-performance, quantum-resistant blockchain built for scalability, privacy, and interoperability.
 
 This app allows users to:
